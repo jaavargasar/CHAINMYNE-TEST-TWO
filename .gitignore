@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+
+# Environment files
+# .env 
+# This should be skipped, but for the functionality and facility to run this application i will keep it inside the github repo
+# Because it has sensitive data, this should not be uploaded to the github repo, for example in production
