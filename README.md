@@ -22,10 +22,12 @@ http://localhost:3000/api/coins
 
 with the following body as Json
 
+```
 {
-"symbols": [ "BTC", "ETH", "LTC" ]
-// "currency": "cad", Optional it could be cad, usd, etc ...
+    "symbols": [ "BTC", "ETH", "LTC" ]
+    // "currency": "cad", Optional it could be cad, usd, etc ...
 }
+```
 
 No headers are required or extra configuration
 
@@ -34,20 +36,23 @@ Symbols are mandatory and it is an array of strings, there we need to insert the
 Currency is an optional value and will display the outcome in that currency , it could be cad, usd , etc ...
 
 The response will be a json file, an array of objects displaying the following information as an example:
+
+```
 [
-{
-"currency": "cad",
-"name": "Bitcoin",
-"symbol": "btc",
-"currentPrice": 79449,
-"marketCap": 1568919339608,
-"marketCapRank": 1,
-"price24hChange": 208.58,
-"priceChangePercentage24h": 0.26322,
-"highestPrice24h": 80151,
-"lowestPrice24h": 79240
-}, ...
+    {
+    "currency": "cad",
+    "name": "Bitcoin",
+    "symbol": "btc",
+    "currentPrice": 79449,
+    "marketCap": 1568919339608,
+    "marketCapRank": 1,
+    "price24hChange": 208.58,
+    "priceChangePercentage24h": 0.26322,
+    "highestPrice24h": 80151,
+    "lowestPrice24h": 79240
+    }, ...
 ]
+```
 
 Inside the folder Routes there is the controller
 Inside Services is the functions that will retrieve the information and return it to the controller
